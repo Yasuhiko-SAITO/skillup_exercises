@@ -1,0 +1,19 @@
+正三角形を描くプログラム
+
+kame.home()
+kame.clear()
+
+line = 120
+rotation_angle = 120
+half_line = line / 2
+half_line = round(half_line)
+
+
+kame.forward(half_line)
+
+for i in range(2):
+	kame.left(rotation_angle)
+	kame.forward(line)
+
+kame.left(rotation_angle)
+kame.forward(half_line)

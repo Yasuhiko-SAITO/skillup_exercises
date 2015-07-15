@@ -1,0 +1,14 @@
+#### 直角三角形の斜辺を求める関数 ####
+## 斜辺を求める。
+## sanheho(a, b)
+## a, bそれぞれに数値を入れると斜辺が算出される。
+
+
+
+def sanheho(a=3, b=4)
+	import math
+	c_nijo = (a**2 + b**2)
+	c = math.sqrt(c_nijo)
+	print(c)
+	
+	

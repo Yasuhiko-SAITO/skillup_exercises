@@ -1,0 +1,29 @@
+文字列のメソッド
+
+変数mojiとして、
+moji = "mojiretsu_no_method"
+
+	moji.find('指定の文字列')
+		文字列の番号を返す
+			例：>>>moji.find('ire')
+				3
+
+	moji.replace('指定の文字列', '代わりの文字列')
+		指定の文字列を、代わりの文字列に置き換える。
+			例：>>>moji.replace('ire', 'IRU')
+				mojIRUtsu_no_method
+
+	moji.split('指定の文字列')
+		指定の文字列で区切り、リストにする。
+			例：>>>moji.split('_')
+				['mojiretsu', 'no', 'method']
+
+	moji.upper()
+		文字列を大文字にする
+			例：>>>moji.upper()
+				MOJIRETSU_NO_METHOD
+
+	moji.isalpha()
+		文字列が英字だけか否か
+			例：>>>moji.isalpha()
+				False

@@ -1,0 +1,35 @@
+変数risutoについて
+risuto = ['risuto', 12, 3.45]
+
+	risuto.append(加わるもの)
+		リストに数字や文字列を加える。
+		実行したらそのリスト自体が変化することに注意。
+			例：>>>risuto.append(6)
+				>>>risuto
+				['risuto', 12, 3.45, 6]
+
+	risuto.pop(指定のリスト番号)
+		指定のリスト番号を返し、
+		それをリスト自体から削除する。
+		リストは変化するものの、リスト自体は返さない。
+			例：>>>risuto.pop(0)
+				'risuto'
+				>>>risuto
+				[12, 3.45, 6]
+
+	risuto.sort()
+		リストを順番通りに並べる。数字、記号、英字、日本字の順番
+			例：>>>risuto.sort()
+				>>>risuto
+				[3.45, 12, 'risuto']
+
+	risuto.reverse()
+		元リストを逆に並べる。
+			例：>>>risuto.reverse()
+				>>>risuto
+				[3.45, 12, 'risuto']
+
+
+
+
+

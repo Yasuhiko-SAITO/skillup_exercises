@@ -1,0 +1,31 @@
+Turtle graphicsを使ったお勉強
+
+＜method＞
+	shape('name'):	カーソルの形を変える
+		turtle:		カーソルを亀にする
+		arrow:		カーソルを三角形にする
+		circle:		カーソルを円にする
+	shapesize
+	　(y, x, bold):	カーソルの大きさを変える
+	forward(n):		数値分だけ前に進む
+	backward(n):	数値分だけ後ろに下がる
+	right(angle):	角度分だけ右回りする
+	left(angle):	角度分だけ左回りする
+	circle(n):		左回りで数値分の半径の円軌道を描く
+	goto(x, y):		カーソルが移動する
+	penup():		ペンを上げて書けなくする
+	pendown():		ペンを下げて書けるようにする
+	isdown():		ペンが下がっているかを真偽値で返す
+	clear():		軌跡をすべて消す
+	home():			位置を中心に戻す
+	position():		現在位置を返す
+	distance(x, y):	座標(x, y)からの距離を測る
+	window_width():	ウィンドウの横幅を返す
+	window_height():ウィンドウの高さを返す
+
+
+その他
+for i in range(n):	n回分だけ繰り返す
+コロンとinを付け忘れないこと！
+
+	

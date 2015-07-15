@@ -1,0 +1,50 @@
+#### ‹«ŠE“àƒ‰ƒ“ƒ_ƒ€‰^“®####
+## ‹«ŠE“à‚ğƒ‰ƒ“ƒ_ƒ€‚Å‰^“®‚µ‘±‚¯‚é
+
+## •Ï”
+border_radius = 300
+forward_num = 60
+
+
+
+import turtle
+
+kame = turtle.Turtle()
+
+
+
+import random
+
+
+
+kame.home()
+kame.clear()
+kame.shape('turtle')
+kame.shapesize(3,3,1)
+
+# ‹«ŠEü‚Ö
+kame.penup()
+kame.goto(0, border_radius)
+kame.pendown()
+
+# ‹«ŠEüˆø‚«
+kame.left(180)
+kame.circle(border_radius)
+
+# ‰ŠúˆÊ’u‚Ö
+kame.penup()
+kame.home()
+kame.pendown()
+
+rep = 1
+
+
+while kame.distance(0,0) < 300:
+	rotation_angle = random.randint(1,360)
+	kame.right(rotation_angle)
+	kame.forward(forward_num)
+	rep += 1
+
+kame.undo()
+rep
+

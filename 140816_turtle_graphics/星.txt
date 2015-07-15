@@ -1,0 +1,39 @@
+####星を書くプログラム####
+## 問題点として、sin関数が上手く使えないので、
+## 線分長さ設定が数値直接入力でカッコ悪い。
+## 5角の星を書くことに特化していて、6角はかけない。
+
+start_y = 200
+
+
+kame.home()
+kame.clear()
+kame.penup()
+kame.left(90)
+kame.goto(0, start_y)
+kame.pendown()
+
+# 回転角度設定
+central_angle = 360
+angle_num = 5
+nitohen_c_angle = central_angle / angle_num * 2
+nitohen_c_angle = round(nitohen_c_angle)
+nitohen_angle = (180 - nitohen_c_angle) / 2
+nitohen_angle = round(nitohen_angle)
+f_rotation_angle = 180 - nitohen_angle
+rotation_angle = 180 - 2 * nitohen_angle
+
+# 線分長さ設定
+line_length = 420.5
+
+kame.right(f_rotation_angle)
+kame.forward(line_length)
+
+for i in range(angle_num - 1):
+	kame.right(rotation_angle)
+	kame.forward(line_length)
+
+kame.penup()
+kame.home()
+
+
